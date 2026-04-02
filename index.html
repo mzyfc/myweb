@@ -205,15 +205,15 @@
 </header>
 <section class="banner">
     <div class="container">
-        <h1>AI 智能教学 + 微课高效学习</h1>
-        <p>人工智能全程辅助学习，微课视频+智能答疑+自动批改，让学习更轻松、更高效</p>
+        <h1>AI 智能教学 + 视频课程高效学习</h1>
+        <p>人工智能全程辅助学习，课程视频+智能答疑+自动批改，让学习更轻松、更高效</p>
     </div>
 </section>
 <div class="container">
     <div class="main-content">
         <div class="left">
             <div class="course-box">
-                <h2 class="course-title">机器学习基础 · 精品微课</h2>
+                <h2 class="course-title">机器学习基础 · 精品课程</h2>
                 <p><i class="fas fa-clock"></i> 时长约3至5分钟 | <i class="fas fa-star"></i> AI智能辅导模式</p>
                 <div class="video-area">
                     <video autoplay controls id="myVideo" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="ai-card">
                         <h3><i class="fas fa-book"></i> AI 知识点总结</h3>
-                        <p>自动提炼微课重点内容，生成学习笔记，快速复习</p>
+                        <p>自动提炼课程重点内容，生成学习笔记，快速复习</p>
                     </div>
                     <div class="ai-card">
                         <h3><i class="fas fa-chart-line"></i> AI 学习分析</h3>
@@ -240,7 +240,7 @@
                 <div id="quizContainer" style="margin-top:30px;">
                     <h3 style="margin-bottom:15px;"><i class="fas fa-edit"></i> AI 智能随堂测验</h3>
                     <div id="quizContent">
-                        <p style="color: #666;">点击下方按钮，AI 将根据当前微课内容为你生成专属练习题。</p>
+                        <p style="color: #666;">点击下方按钮，AI 将根据当前课程内容为你生成专属练习题。</p>
                         <button class="btn" id="generateQuizBtn" onclick="generateQuizWithAI()">
                             <i class="fas fa-magic"></i> 生成 AI 练习题
                         </button>
@@ -252,7 +252,7 @@
         </div>
         <div class="sidebar">
             <div class="side-card">
-                <h3 class="side-title"><i class="fas fa-list"></i> 微课目录</h3>
+                <h3 class="side-title"><i class="fas fa-list"></i> 课程目录</h3>
                 <ul style="list-style:none;">
                     <li style="padding:8px 0; border-bottom:1px solid #eee;"> ▶ 第1课：机器学习定义与三大范式</li>
                     <li style="padding:8px 0; border-bottom:1px solid #eee;">🔒 第2课：数据集划分与采样</li>
@@ -299,7 +299,7 @@
 </div>
 <footer>
     <div class="container">
-        <p>© 2026 AI智能微课教学平台</p>
+        <p>© 2026 AI智能机器学习课程教学平台</p>
         <p style="margin-top:10px;"><i class="fas fa-lightbulb"></i> 参赛作品（张展硕）</p>
     </div>
 </footer>
@@ -455,7 +455,7 @@ function renderProfessionalUI(res) {
                     messages: [
                         {
                             "role": "system",
-                            "content": "你是一个微课出题专家。请出一道单选题。\n严格要求：\n1. 只输出 HTML 格式。\n2. 包含一个 <p class=\"quiz-q\"> 标签放题目。\n3. 包含三个 <label> 标签，内含 <input type=\"radio\" name=\"ai_quiz\"> 选项。\n4. 必须将正确答案的选项索引（0, 1, 或 2）放在一个隐藏的 div 中：<div id=\"correct_idx\" style=\"display:none\">索引数字</div>。\n5. 绝对不要在页面上直接显示'解析'或'答案'字样。"
+                            "content": "你是一个机器学习出题专家。请出一道单选题。\n严格要求：\n1. 只输出 HTML 格式。\n2. 包含一个 <p class=\"quiz-q\"> 标签放题目。\n3. 包含三个 <label> 标签，内含 <input type=\"radio\" name=\"ai_quiz\"> 选项。\n4. 必须将正确答案的选项索引（0, 1, 或 2）放在一个隐藏的 div 中：<div id=\"correct_idx\" style=\"display:none\">索引数字</div>。\n5. 绝对不要在页面上直接显示'解析'或'答案'字样。"
                         },
                         {"role": "user", "content": "请生成一道关于机器学习或表达能力的练习题。"}
                     ]
